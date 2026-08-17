@@ -1,0 +1,20 @@
+/* Scroll Reveal Animations */
+.reveal-item {
+    opacity: 0;
+    will-change: transform, opacity, filter;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-item[data-reveal="fade-up"] { transform: translateY(40px); }
+.reveal-item[data-reveal="fade-left"] { transform: translateX(-40px); }
+.reveal-item[data-reveal="fade-right"] { transform: translateX(40px); }
+.reveal-item[data-reveal="scale"] { transform: scale(0.92); }
+.reveal-item[data-reveal="blur"] { filter: blur(8px); transform: translateY(20px); }
+
+.reveal-item.revealed {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    filter: blur(0);
+}

@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light" data-font-size="normal">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neodata | Desarrollo web y soluciones tecnológicas para tu negocio</title>
+    <meta name="description"
+        content="Ayudamos a PYMEs, emprendedores y profesionales a digitalizar, mejorar y mantener sus negocios mediante desarrollo web, plataformas empresariales y servidores cloud.">
+    <meta name="keywords"
+        content="desarrollo web, páginas web, diseño web, plataformas empresariales, Odoo, BookStack, ERP, CRM, infraestructura cloud, servidores VPS, administración de servidores, Linux, Docker, Nginx, seguridad de servidores, backups, desarrollo web para empresas, soluciones digitales para PYMEs">
+    <link rel="canonical" href="https://neodata.cl/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neodata.cl/">
+    <meta property="og:title" content="Neodata | Desarrollo web y soluciones tecnológicas para tu negocio">
+    <meta property="og:description"
+        content="Ayudamos a PYMEs, emprendedores y profesionales a digitalizar, mejorar y mantener sus negocios mediante desarrollo web, plataformas empresariales y servidores cloud.">
+    <meta property="og:image" content="https://neodata.cl/assets/logos/favicon.svg">
+
+    <!-- Preload Crítico para Renders de Alta Velocidad -->
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-v13-latin-regular.woff2" crossorigin>
+
+    <!-- Schema.org Datos Estructurados -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Neodata",
+      "image": "https://neodata.cl/assets/logos/favicon.svg",
+      "@id": "https://neodata.cl",
+      "url": "https://neodata.cl",
+      "telephone": "+56938710338",
+      "address": { "@type": "PostalAddress", "addressCountry": "CL" },
+      "priceRange": "$$$"
+    }
+    </script>
+
+    <!-- Scripts de Librerías Externas (GSAP) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+    <!-- Hojas de Estilo del Proyecto -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <!-- ========================================== -->
+    <!-- CAPAS GLOBALES: FONDO Y BARRA DE PROGRESO -->
+    <!-- ========================================== -->
+    <div class="global-canvas-bg" aria-hidden="true">
+        <div class="ambient-glow glow-primary"></div>
+        <div class="ambient-glow glow-secondary"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- ========================================== -->
+    <!-- ENCABEZADO Y NAVEGACIÓN DE ESCRITORIO     -->
+    <!-- ========================================== -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+<a href="/index.html" style="display: flex; align-items: center; height: 40px; flex-shrink: 0; text-decoration: none;">
+
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1250" width="100%" height="100%">
+  <defs>
+    <!-- GRADIENTES & FILTROS PARA LOGOS 1 Y 3 (ORO / CHAMPAGNE) -->
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE" />
+      <stop offset="35%" stop-color="#F3E0C8" />
+      <stop offset="70%" stop-color="#D8B280" />
+      <stop offset="100%" stop-color="#A67B46" />
+    </linearGradient>
+
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C193" />
+      <stop offset="50%" stop-color="#B88E56" />
+      <stop offset="100%" stop-color="#6E4D21" />
+    </linearGradient>
+
+    <linearGradient id="goldRibbon" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#FBEBD6" />
+      <stop offset="60%" stop-color="#DDB37A" />
+      <stop offset="100%" stop-color="#8F6229" />
+    </linearGradient>
+
+    <linearGradient id="orangeChannel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFBA42" />
+      <stop offset="50%" stop-color="#FF6B00" />
+      <stop offset="100%" stop-color="#CC3300" />
+    </linearGradient>
+
+    <!-- GRADIENTES PARA LOGO 2 (METAL METÁLICO OSCURO) -->
+    <linearGradient id="darkMetal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#525763" />
+      <stop offset="50%" stop-color="#2D313A" />
+      <stop offset="100%" stop-color="#14161B" />
+    </linearGradient>
+
+    <linearGradient id="darkMetal2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A3E47" />
+      <stop offset="100%" stop-color="#1A1C22" />
+    </linearGradient>
+
+    <!-- FILTROS DE SOMBRA Y GLOW -->
+    <filter id="shadow3D" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="4" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+    <filter id="glowOrange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .bg-dark { fill: #0A0D14; rx: 16px; stroke: #1E2638; stroke-width: 1.5px; }
+    .bg-light { fill: #F4F6F9; rx: 16px; stroke: #D1D8E2; stroke-width: 1.5px; }
+    .brand-text-gold { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 110px; font-weight: 900; letter-spacing: 5px; fill: url(#goldRibbon); }
+    .tagline-gold { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 30px; font-weight: 500; letter-spacing: 12px; fill: #E2C193; opacity: 0.95; }
+    
+    .brand-text-dark { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 110px; font-weight: 900; letter-spacing: 5px; fill: #0C1017; }
+    .tagline-dark { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 30px; font-weight: 600; letter-spacing: 12px; fill: #1E2532; }
+
+    .brand-text-champagne { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 110px; font-weight: 900; letter-spacing: 5px; fill: #FCEFD2; }
+    .tagline-champagne { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 30px; font-weight: 500; letter-spacing: 12px; fill: #D2B48C; opacity: 0.95; }
+  </style>
+
+  <!-- 1. LOGO PRINCIPAL (FONDO OSCURO / ORO) -->
+  <g transform="translate(40, 40)">
+    <rect width="1520" height="520" class="bg-dark"/>
+
+    <g transform="translate(80, 80)">
+      <g filter="url(#shadow3D)">
+        <path d="M 62 40 L 62 340 L 78 340 L 78 40 Z" fill="url(#orangeChannel)" filter="url(#glowOrange)"/>
+        <path d="M 20 40 L 60 40 L 60 340 L 20 340 Z" fill="url(#goldLight)"/>
+        <path d="M 10 50 L 20 40 L 20 340 L 10 330 Z" fill="url(#goldDark)" opacity="0.7"/>
+        <path d="M 80 40 L 110 40 L 110 340 L 80 340 Z" fill="url(#goldDark)"/>
+        <path d="M 80 40 L 95 40 L 95 340 L 80 340 Z" fill="url(#goldLight)" opacity="0.6"/>
+        <path d="M 60 190 Q 150 110 250 50 Q 220 120 110 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
+        <path d="M 50 200 C 90 150, 160 80, 270 40 C 290 33, 310 45, 290 70 C 230 140, 150 210, 80 240 Z" fill="url(#goldRibbon)"/>
+        <path d="M 75 190 C 130 135, 200 85, 280 50 C 285 58, 270 80, 220 120 C 160 160, 110 195, 75 190 Z" fill="url(#goldDark)" opacity="0.85"/>
+        <path d="M 80 200 Q 180 230, 270 330 Q 190 260 70 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
+        <path d="M 75 190 C 120 220, 200 270, 285 330 C 298 340, 285 355, 265 350 C 190 310, 120 250, 60 215 Z" fill="url(#goldRibbon)"/>
+        <path d="M 90 215 C 140 245, 210 295, 275 338 C 260 342, 230 330, 180 285 C 130 245, 95 220, 90 215 Z" fill="url(#goldDark)" opacity="0.85"/>
+        <path d="M 52 195 C 100 140, 170 75, 278 43" stroke="#FFFFFF" stroke-width="3" opacity="0.7" fill="none"/>
+        <path d="M 78 195 C 125 225, 205 275, 278 333" stroke="#FFFFFF" stroke-width="2.5" opacity="0.6" fill="none"/>
+      </g>
+
+      <g transform="translate(380, 210)">
+        <text x="0" y="0" class="brand-text-gold">KRONDATA</text>
+        <text x="8" y="70" class="tagline-gold">TECNOLOGÍA · NUBE · DESARROLLO</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 2. LOGO SECUNDARIO (FONDO CLARO) -->
+  <g transform="translate(40, 600)">
+    <rect width="740" height="600" class="bg-light"/>
+
+    <g transform="translate(35, 110) scale(0.68)">
+      <g filter="url(#shadow3D)">
+        <path d="M 62 40 L 62 340 L 78 340 L 78 40 Z" fill="url(#orangeChannel)" filter="url(#glowOrange)"/>
+        <path d="M 20 40 L 60 40 L 60 340 L 20 340 Z" fill="url(#darkMetal1)"/>
+        <path d="M 10 50 L 20 40 L 20 340 L 10 330 Z" fill="url(#darkMetal2)"/>
+        <path d="M 80 40 L 110 40 L 110 340 L 80 340 Z" fill="url(#darkMetal2)"/>
+        <path d="M 80 40 L 95 40 L 95 340 L 80 340 Z" fill="url(#darkMetal1)" opacity="0.6"/>
+        <path d="M 60 190 Q 150 110 250 50 Q 220 120 110 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
+        <path d="M 50 200 C 90 150, 160 80, 270 40 C 290 33, 310 45, 290 70 C 230 140, 150 210, 80 240 Z" fill="url(#darkMetal1)"/>
+        <path d="M 75 190 C 130 135, 200 85, 280 50 C 285 58, 270 80, 220 120 C 160 160, 110 195, 75 190 Z" fill="url(#darkMetal2)"/>
+        <path d="M 80 200 Q 180 230, 270 330 Q 190 260 70 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
+        <path d="M 75 190 C 120 220, 200 270, 285 330 C 298 340, 285 355, 265 350 C 190 310, 120 250, 60 215 Z" fill="url(#darkMetal1)"/>
+        <path d="M 90 215 C 140 245, 210 295, 275 338 C 260 342, 230 330, 180 285 C 130 245, 95 220, 90 215 Z" fill="url(#darkMetal2)"/>
+        <path d="M 52 195 C 100 140, 170 75, 278 43" stroke="#8A95A5" stroke-width="2.5" opacity="0.6" fill="none"/>
+      </g>
+
+      <g transform="translate(360, 210)">
+        <text x="0" y="0" class="brand-text-dark">KRONDATA</text>
+        <text x="5" y="70" class="tagline-dark">TECNOLOGÍA · NUBE · DESARROLLO</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 3. LOGO COMPACTO (FONDO OSCURO / CREMA) -->
+  <g transform="translate(820, 600)">
+    <rect width="740" height="600" class="bg-dark"/>
+
+    <g transform="translate(35, 110) scale(0.68)">
+      <g filter="url(#shadow3D)">
+        <path d="M 62 40 L 62 340 L 78 340 L 78 40 Z" fill="url(#orangeChannel)" filter="url(#glowOrange)"/>
+        <path d="M 20 40 L 60 40 L 60 340 L 20 340 Z" fill="url(#goldLight)"/>
+        <path d="M 10 50 L 20 40 L 20 340 L 10 330 Z" fill="url(#goldDark)" opacity="0.7"/>
+        <path d="M 80 40 L 110 40 L 110 340 L 80 340 Z" fill="url(#goldDark)"/>
+        <path d="M 80 40 L 95 40 L 95 340 L 80 340 Z" fill="url(#goldLight)" opacity="0.6"/>
+        <path d="M 60 190 Q 150 110 250 50 Q 220 120 110 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
+        <path d="M 50 200 C 90 150, 160 80, 270 40 C 290 33, 310 45, 290 70 C 230 140, 150 210, 80 240 Z" fill="url(#goldRibbon)"/>
+        <path d="M 75 190 C 130 135, 200 85, 280 50 C 285 58, 270 80, 220 120 C 160 160, 110 195, 75 190 Z" fill="url(#goldDark)" opacity="0.85"/>
+        <path d="M 80 200 Q 180 230, 270 330 Q 190 260 70 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
+        <path d="M 75 190 C 120 220, 200 270, 285 330 C 298 340, 285 355, 265 350 C 190 310, 120 250, 60 215 Z" fill="url(#goldRibbon)"/>
+        <path d="M 90 215 C 140 245, 210 295, 275 338 C 260 342, 230 330, 180 285 C 130 245, 95 220, 90 215 Z" fill="url(#goldDark)" opacity="0.85"/>
+        <path d="M 52 195 C 100 140, 170 75, 278 43" stroke="#FFFFFF" stroke-width="3" opacity="0.7" fill="none"/>
+        <path d="M 78 195 C 125 225, 205 275, 278 333" stroke="#FFFFFF" stroke-width="2.5" opacity="0.6" fill="none"/>
+      </g>
+
+      <g transform="translate(360, 210)">
+        <text x="0" y="0" class="brand-text-champagne">KRONDATA</text>
+        <text x="5" y="70" class="tagline-champagne">TECNOLOGÍA · NUBE · DESARROLLO</text>
+      </g>
+    </g>
+  </g>
+</svg>
+
+
+
+
+
+
+  </a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Menú principal">
+                <a href="#soluciones" class="nav-link">Servicios</a>
+                <a href="#proceso" class="nav-link">Cómo trabajamos</a>
+                <a href="#portafolio" class="nav-link">Proyectos</a>
+                <a href="#metricas-premium" class="nav-link">Confianza</a>
+                <a href="#planes" class="nav-link">Planes</a>
+                <a href="#faq" class="nav-link">Preguntas frecuentes</a>
+
+                <!-- Controles para Dispositivos Móviles -->
+                <div class="mobile-only-cta">
+                    <div class="mobile-controls-row">
+                        <button class="control-glass-btn" id="fontSizeToggleMobile"
+                            aria-label="Cambiar tamaño de fuente">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M4 7V4h16v3M9 20h6M12 4v16" />
+                            </svg>
+                        </button>
+                        <button class="control-glass-btn theme-switch-btn" id="themeToggleMobile"
+                            aria-label="Cambiar tema claro u oscuro">
+                            <span class="theme-icon sun" aria-hidden="true">☀️</span>
+                            <span class="theme-icon moon" aria-hidden="true">🌙</span>
+                        </button>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary w-100 mobile-thumb-cta">Cotizar proyecto</a>
+                </div>
+            </nav>
+
+            <!-- Controles de la Barra Superior en Escritorio -->
+            <div class="nav-controls">
+                <button class="control-glass-btn" id="fontSizeToggle" aria-label="Cambiar tamaño de fuente">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
+                        <path d="M4 7V4h16v3M9 20h6M12 4v16" />
+                    </svg>
+                </button>
+
+                <button class="control-glass-btn theme-switch-btn" id="themeToggle"
+                    aria-label="Cambiar tema claro u oscuro">
+                    <span class="theme-icon sun" aria-hidden="true">☀️</span>
+                    <span class="theme-icon moon" aria-hidden="true">🌙</span>
+                </button>
+
+                <div class="nav-actions">
+                    <a href="#contacto" class="btn btn-secondary-outline desktop-cta">Cotizar proyecto</a>
+                </div>
+
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú de navegación"
+                    aria-expanded="false">
+                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================== -->
+        <!-- SECCIÓN 1: HERO PRINCIPAL                 -->
+        <!-- ========================================== -->
+        <section class="hero-pinned-wrapper" id="heroPinnedWrapper">
+            <section class="hero" id="hero">
+                <div class="hero-video-container parallax-bg" aria-hidden="true">
+                    <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" tabindex="-1">
+                        <source src="assets/video/Hero-H-960.webm" type="video/webm">
+                        <source src="assets/video/Hero-H-960.mp4" type="video/mp4">
+                    </video>
+                    <!-- Esta capa recibe el gradiente horizontal para resaltar el texto -->
+                    <div class="hero-video-overlay" aria-hidden="true"></div>
+                </div>
+
+                <div class="container hero-grid hero-parallax-content">
+                    <div class="hero-content reveal-item" data-reveal="fade-left">
+                        <div class="hero-badge">
+                            <span class="badge-dot" aria-hidden="true"></span> Tecnología para hacer crecer tu negocio
+                        </div>
+                        <h1 class="hero-title">Digitalizamos tu negocio para que <span class="gradient-text">puedas
+                                hacerlo crecer</span>.</h1>
+                        <p class="hero-description">Desarrollamos sitios web, plataformas empresariales y soluciones de
+                            infraestructura adaptadas a las necesidades reales de tu negocio. Desde tu primera página
+                            web hasta la infraestructura que mantiene tus sistemas funcionando.</p>
+                        <div class="hero-cta-group">
+                            <a href="#contacto" class="btn btn-primary">Quiero digitalizar mi negocio
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/56938710338?text=Hola%20Neodata,%20necesito%20asesoría%20para%20mi%20negocio."
+                                target="_blank" rel="noopener" class="btn btn-accent-action"
+                                aria-label="Contactar por WhatsApp">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                                </svg>
+                                Hablar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-visual reveal-item" data-reveal="fade-right"></div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 2: PILARES Y SERVICIOS             -->
+        <!-- ========================================== -->
+        <section class="section pilares overlapping-section" id="soluciones">
+            <div class="section-divider-top" aria-hidden="true">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="container z-index-content">
+                <div class="section-header text-center reveal-item" data-reveal="blur">
+                    <span class="section-tag">Soluciones para cada etapa de tu negocio</span>
+                    <h2 class="section-title">¿Qué podemos hacer por ti?</h2>
+                    <p class="section-subtitle">No necesitas adaptar tu negocio a la tecnología. Nosotros adaptamos la
+                        tecnología a lo que realmente necesitas.</p>
+                </div>
+
+                <div class="pilares-grid">
+                    <!-- Servicio 1 -->
+                    <div class="pilar-card tilt-card reveal-item" data-reveal="fade-up">
+                        <div class="service-tag">DESARROLLO WEB</div>
+                        <div class="pilar-icon" aria-hidden="true">🌐</div>
+                        <h3>Una web que represente tu negocio y te ayude a conseguir clientes.</h3>
+                        <p class="pilar-desc">Construimos páginas web, landing pages, sitios corporativos y aplicaciones
+                            web diseñadas alrededor de tus objetivos. Nos preocupamos por el diseño, la experiencia del
+                            usuario, la velocidad y el SEO para que tu sitio funcione.</p>
+                        <ul class="service-benefits">
+                            <li>Landing pages</li>
+                            <li>Sitios corporativos</li>
+                            <li>Tiendas online y aplicaciones web</li>
+                            <li>WordPress, integraciones y APIs</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-secondary-outline w-100 mt-20">Crear mi sitio web</a>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="pilar-card tilt-card reveal-item" data-reveal="fade-up">
+                        <div class="service-tag">PLATAFORMAS EMPRESARIALES</div>
+                        <div class="pilar-icon" aria-hidden="true">🏢</div>
+                        <h3>Ordena la información y simplifica la operación de tu empresa.</h3>
+                        <p class="pilar-desc">Implementamos y personalizamos plataformas para centralizar información,
+                            gestionar procesos y facilitar el trabajo de tu equipo. Adaptamos cada solución a tu
+                            operación.</p>
+                        <ul class="service-benefits">
+                            <li>Gestión empresarial, ERP y CRM</li>
+                            <li>Gestión documental e intranets</li>
+                            <li>Sistemas internos a medida</li>
+                            <li>Odoo, BookStack y WordPress</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-secondary-outline w-100 mt-20">Conocer plataformas</a>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="pilar-card tilt-card reveal-item" data-reveal="fade-up">
+                        <div class="service-tag">CLOUD & INFRAESTRUCTURA</div>
+                        <div class="pilar-icon" aria-hidden="true">☁️</div>
+                        <h3>Tu tecnología funcionando de forma segura y confiable.</h3>
+                        <p class="pilar-desc">Configuramos y mantenemos servidores y entornos cloud para que tus
+                            aplicaciones funcionen correctamente. Nos encargamos de la infraestructura técnica.</p>
+                        <ul class="service-benefits">
+                            <li>Servidores VPS, Linux y Nginx</li>
+                            <li>Docker, firewall y seguridad avanzada</li>
+                            <li>Backups y monitoreo preventivo</li>
+                            <li>Infraestructura en AWS, Linode y Hetzner</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-secondary-outline w-100 mt-20">Proteger mi
+                            infraestructura</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider-bottom" aria-hidden="true">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 3: MARQUEE / TICKER DE CONFIANZA  -->
+        <!-- ========================================== -->
+        <section class="section tech-ticker-section">
+            <div class="container ticker-grid-layout">
+                <div class="ticker-heading">
+                    <h2>Tecnologías que impulsan <span class="gradient-text">nuestras soluciones</span><br
+                            class="hidden-mobile"> para hacer crecer tu negocio</h2>
+                </div>
+                <div class="ticker-marquee-container">
+                    <div class="ticker-track">
+                        <span class="ticker-logo-item"><img src="assets/img/logos/Def_Niñez_CP_2023.webp"
+                                alt="Defensa del Niño" loading="lazy" width="110" height="60"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/logo_defensoria.webp"
+                                alt="Defensoría del Pueblo" loading="lazy" width="110" height="60"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/cnc_logo.webp" alt="CNC Logo"
+                                loading="lazy" width="110" height="64"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/cyc_consultores.webp"
+                                alt="CYC Consultores" loading="lazy" width="110" height="64"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/huelen.webp" alt="Huelen"
+                                loading="lazy" width="110" height="58"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/agrosuper.webp" alt="Agrosuper"
+                                loading="lazy" width="110" height="62"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/promobility.webp" alt="Promobility"
+                                loading="lazy" width="110" height="58"></span>
+
+                        <!-- Bloque duplicado para loop infinito fluido -->
+                        <span class="ticker-logo-item"><img src="assets/img/logos/Def_Niñez_CP_2023.webp"
+                                alt="Defensa del Niño" loading="lazy" width="110" height="60"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/logo_defensoria.webp"
+                                alt="Defensoría del Pueblo" loading="lazy" width="110" height="60"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/cnc_logo.webp" alt="CNC Logo"
+                                loading="lazy" width="110" height="64"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/cyc_consultores.webp"
+                                alt="CYC Consultores" loading="lazy" width="110" height="64"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/huelen.webp" alt="Huelen"
+                                loading="lazy" width="110" height="58"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/agrosuper.webp" alt="Agrosuper"
+                                loading="lazy" width="110" height="62"></span>
+                        <span class="ticker-logo-item"><img src="assets/img/logos/promobility.webp" alt="Promobility"
+                                loading="lazy" width="110" height="58"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 4: PROCESO / TRABAJO FLUJO        -->
+        <!-- ========================================== -->
+        <section class="section workflow-parallax-section" id="proceso">
+            <div class="container workflow-reveal-container">
+                <div class="section-header text-center reveal-item" data-reveal="fade-up">
+                    <div class="hero-badge mx-auto mb-16">
+                        <span class="badge-dot" aria-hidden="true"></span> CÓMO TRABAJAMOS
+                    </div>
+                    <h2 class="workflow-main-title">De la idea a una <span class="gradient-italic">solución
+                            funcionando</span></h2>
+                    <p class="section-subtitle max-w-600 mx-auto">Te acompañamos desde el primer
+                        diagnóstico hasta la puesta en marcha y el soporte posterior. Nosotros nos encargamos de la
+                        parte técnica.</p>
+                </div>
+
+                <div class="workflow-steps-wrapper">
+                    <div class="workflow-connecting-line" aria-hidden="true">
+                        <div class="workflow-line-progress"></div>
+                    </div>
+
+                    <div class="workflow-step-item reveal-item" data-reveal="fade-left">
+                        <div class="step-circle-badge" aria-hidden="true">1</div>
+                        <div class="step-content">
+                            <h3>Conocemos tu negocio</h3>
+                            <p>Nos cuentas qué haces, qué necesitas mejorar y qué quieres conseguir.</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step-item reveal-item" data-reveal="fade-left">
+                        <div class="step-circle-badge" aria-hidden="true">2</div>
+                        <div class="step-content">
+                            <h3>Definimos la solución</h3>
+                            <p>Analizamos tus necesidades y te proponemos la alternativa más conveniente.</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step-item active reveal-item" data-reveal="scale">
+                        <div class="step-circle-badge" aria-hidden="true">3</div>
+                        <div class="step-content">
+                            <h3>Construimos</h3>
+                            <p>Diseñamos y desarrollamos la solución manteniéndote informado en todo momento.</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step-item reveal-item" data-reveal="fade-right">
+                        <div class="step-circle-badge" aria-hidden="true">4</div>
+                        <div class="step-content">
+                            <h3>Probamos y ajustamos</h3>
+                            <p>Revisamos funcionamiento, seguridad y rendimiento antes de publicar.</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step-item reveal-item" data-reveal="fade-right">
+                        <div class="step-circle-badge" aria-hidden="true">5</div>
+                        <div class="step-content">
+                            <h3>Publicamos y acompañamos</h3>
+                            <p>Ponemos la solución en línea y seguimos disponibles para soporte continuo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 5: MÉTRICAS Y ENGRANAJES         -->
+        <!-- ========================================== -->
+        <section class="section metrics-section" id="metricas-premium">
+            <div class="container metrics-grid-layout">
+                <div class="metrics-content-left reveal-item revealed" data-reveal="fade-left">
+                    <span class="section-tag">Confianza y Resultados</span>
+                    <h2 class="metrics-main-title">Tu negocio merece una <span class="gradient-text">tecnología que
+                            funcione</span>.</h2>
+                    <p class="metrics-desc">Trabajamos directamente contigo, sin intermediarios innecesarios y con foco
+                        en que cada solución tenga un propósito claro: ayudarte a trabajar mejor y hacer crecer tu
+                        negocio.</p>
+                    <div class="metrics-cta-group">
+                        <a href="#contacto" class="btn btn-primary">Conversemos sobre tu proyecto <svg width="15"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg></a>
+                    </div>
+                </div>
+
+                <div class="metrics-circles-grid">
+                    <div class="metric-circle-card reveal-item revealed" data-reveal="scale">
+                        <div class="svg-rotate-wrapper">
+                            <svg class="circular-text-svg" viewBox="0 0 200 200" aria-hidden="true">
+                                <path id="textPath1" fill="none"
+                                    d="M 100, 100 m -78, 0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"></path>
+                                <text>
+                                    <textPath href="#textPath1" startOffset="0%">PROYECTOS ENTREGADOS • PROYECTOS
+                                        EXITOSOS • +30 PROYECTOS</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="metric-inner-content">
+                            <span class="metric-number" data-target-num="30" data-prefix="+">+30</span>
+                            <span class="metric-label">Proyectos entregados</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-circle-card reveal-item revealed" data-reveal="scale">
+                        <div class="svg-rotate-wrapper gear-reverse">
+                            <svg class="circular-text-svg" viewBox="0 0 200 200" aria-hidden="true">
+                                <path id="textPath2" fill="none"
+                                    d="M 100, 100 m -78, 0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"></path>
+                                <text>
+                                    <textPath href="#textPath2" startOffset="0%">AÑOS CONSTRUYENDO SOLUCIONES •
+                                        EXPERIENCIA • CONSTRUYENDO</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="metric-inner-content">
+                            <span class="metric-number" data-target-num="7" data-suffix="+">7+</span>
+                            <span class="metric-label">Años construyendo soluciones</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-circle-card reveal-item revealed" data-reveal="scale">
+                        <div class="svg-rotate-wrapper">
+                            <svg class="circular-text-svg" viewBox="0 0 200 200" aria-hidden="true">
+                                <path id="textPath3" fill="none"
+                                    d="M 100, 100 m -78, 0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"></path>
+                                <text>
+                                    <textPath href="#textPath3" startOffset="0%">DISEÑOS ADAPTABLES • MÓVILES Y
+                                        COMPUTADORES • 100% ADAPTABLES</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="metric-inner-content">
+                            <span class="metric-number" data-target-num="100" data-suffix="%">100%</span>
+                            <span class="metric-label">Diseños adaptables</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-circle-card reveal-item revealed" data-reveal="scale">
+                        <div class="svg-rotate-wrapper gear-reverse">
+                            <svg class="circular-text-svg" viewBox="0 0 200 200" aria-hidden="true">
+                                <path id="textPath4" fill="none"
+                                    d="M 100, 100 m -78, 0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"></path>
+                                <text>
+                                    <textPath href="#textPath4" startOffset="0%">TIEMPO DE RESPUESTA • ATENCIÓN RÁPIDA •
+                                        MENOS DE 24 HORAS</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="metric-inner-content">
+                            <span class="metric-number" data-is-text="true" data-text-val="&lt;24h">&lt;24h</span>
+                            <span class="metric-label">Tiempo de respuesta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container operational-stability-bar reveal-item mt-30" data-reveal="fade-up">
+                <div class="stability-info">
+                    <span class="stability-dot" aria-hidden="true"></span>
+                    <span>Rendimiento bajo los estándares de Google</span>
+                </div>
+                <div class="stability-percentage" id="stabilityCounter" data-target="100">0.00%</div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 6: PORTAFOLIO DE PROYECTOS        -->
+        <!-- ========================================== -->
+        <section class="section portafolio" id="portafolio">
+            <div class="container">
+                <div class="section-header text-center reveal-item" data-reveal="blur">
+                    <span class="section-tag">Proyectos reales</span>
+                    <h2 class="section-title">Proyectos que hablan por nosotros</h2>
+                    <p class="section-subtitle">Estos son algunos de los proyectos en los que hemos ayudado a empresas e
+                        instituciones a mejorar su presencia digital.</p>
+                </div>
+
+                <div class="portfolio-controls-bar">
+                    <button class="portfolio-pause-btn" id="portfolioPauseBtn"
+                        aria-label="Pausar o reanudar carrusel automático">
+                        <span class="pause-icon" aria-hidden="true">⏸️</span> <span class="pause-text">Pausar</span>
+                    </button>
+                    <div class="portfolio-dots-paginator" id="portfolioDots" aria-label="Paginador del portafolio">
+                    </div>
+                </div>
+
+                <div class="portfolio-master-layout">
+                    <div class="portfolio-carousel-container" id="portfolioCarousel">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Proyecto 1 -->
+                            <div class="portfolio-3d-card active" data-index="0" data-title="Defensoría de la Niñez"
+                                data-tag="#InstitucionesPúblicas"
+                                data-problem="Brecha en accesibilidad digital y necesidad de un canal institucional seguro y transparente para la ciudadanía."
+                                data-solution="Plataforma web con estándares WCAG 2.1 de accesibilidad, cifrado avanzado y arquitectura de alta disponibilidad."
+                                data-time="4 semanas" data-url="#contacto">
+                                <div class="portfolio-img-box">
+                                    <a href="https://www.defensorianinez.cl/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Visitar sitio web de Defensoría de la Niñez"
+                                        class="portfolio-external-link">
+                                        <img src="assets/img/landing/defensoria_ninez.webp" alt="Defensoría de la Niñez"
+                                            loading="lazy" width="500" height="300">
+                                        <svg class="external-link-icon" width="18" height="18" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <span class="portfolio-tag">#InstitucionesPúblicas</span>
+                                </div>
+                            </div>
+                            <!-- Proyecto 2 -->
+                            <div class="portfolio-3d-card" data-index="1" data-title="Cámara Nacional de Comercio (CNC)"
+                                data-tag="#Gremios"
+                                data-problem="Atomización de comunicados gremiales y dificultad para centralizar la información a más de 5,000 asociados."
+                                data-solution="Portal corporativo autoadministrable con motor de búsqueda optimizado y boletines interactivos automatizados."
+                                data-time="3 semanas" data-url="#contacto">
+                                <div class="portfolio-img-box">
+                                    <a href="https://cnc.cl/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Visitar sitio web de Cámara Nacional de Comercio"
+                                        class="portfolio-external-link">
+                                        <img src="assets/img/landing/cnc.webp" alt="Cámara Nacional de Comercio"
+                                            loading="lazy" width="500" height="300">
+                                        <svg class="external-link-icon" width="18" height="18" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <span class="portfolio-tag">#Gremios</span>
+                                </div>
+                            </div>
+                            <!-- Proyecto 3 -->
+                            <div class="portfolio-3d-card" data-index="2" data-title="Newsletter Agrosuper"
+                                data-tag="#IndustriaAlimentaria"
+                                data-problem="Alto índice de rebote y tiempos de carga deficientes en reportes corporativos masivos enviados por correo."
+                                data-solution="Desarrollo web ligero optimizado para visualización instantánea y métricas de apertura en tiempo real."
+                                data-time="2 semanas" data-url="#contacto">
+                                <div class="portfolio-img-box">
+                                    <a href="https://www.agrosuper.cl/clientes/newsletter/" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Visitar sitio web de Newsletter Agrosuper"
+                                        class="portfolio-external-link">
+                                        <img src="assets/img/landing/agrosuper.webp" alt="Agrosuper" loading="lazy"
+                                            width="500" height="300">
+                                        <svg class="external-link-icon" width="18" height="18" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <span class="portfolio-tag">#IndustriaAlimentaria</span>
+                                </div>
+                            </div>
+                            <!-- Proyecto 4 -->
+                            <div class="portfolio-3d-card" data-index="3" data-title="Promobility & UCCO"
+                                data-tag="#Automotriz"
+                                data-problem="Falta de integración comercial entre canales de atención digital y la gestión de flotas en terreno."
+                                data-solution="Aplicación web a medida con APIs conectadas en tiempo real y panel de control gerencial."
+                                data-time="5 semanas" data-url="#contacto">
+                                <div class="portfolio-img-box">
+                                    <a href="https://promobility.cl/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Visitar sitio web de Promobility & UCCO"
+                                        class="portfolio-external-link">
+                                        <img src="assets/img/landing/promobility.webp" alt="Promobility" loading="lazy"
+                                            width="500" height="300">
+                                        <svg class="external-link-icon" width="18" height="18" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <span class="portfolio-tag">#Automotriz</span>
+                                </div>
+                            </div>
+                            <!-- Proyecto 5 -->
+                            <div class="portfolio-3d-card" data-index="4" data-title="CyC Consultores"
+                                data-tag="#Educación"
+                                data-problem="La OTEC CyC Consultores necesita una actualización de sus servicios en el entorno digital."
+                                data-solution="Rediseño completo de la landing page. Mejoras integrales en interfaz y optimización técnica."
+                                data-time="3 semanas" data-url="#contacto">
+                                <div class="portfolio-img-box">
+                                    <a href="https://consultorescyc.cl/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Visitar sitio web de CyC Consultores"
+                                        class="portfolio-external-link">
+                                        <img src="assets/img/landing/cyc.webp" alt="CyC Consultores" loading="lazy"
+                                            width="500" height="300">
+                                        <svg class="external-link-icon" width="18" height="18" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <span class="portfolio-tag">#Educación</span>
+                                </div>
+                            </div>
+                            <!-- Proyecto 6 -->
+                            <div class="portfolio-3d-card" data-index="5" data-title="Colegio Huelen"
+                                data-tag="#Educación"
+                                data-problem="La institución necesita una plataforma digital que facilite el acceso a información académica y administrativa."
+                                data-solution="Desarrollo de un sitio web responsive con acceso a bases de datos institucionales y funcionalidades de gestión."
+                                data-time="5 semanas" data-url="#contacto">
+                                <div class="portfolio-img-box">
+                                    <a href="https://huelen.cl/" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Visitar sitio web de Colegio Huelen"
+                                        class="portfolio-external-link">
+                                        <img src="assets/img/landing/huelen.webp" alt="Colegio Huelen" loading="lazy"
+                                            width="500" height="300">
+                                        <svg class="external-link-icon" width="18" height="18" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <span class="portfolio-tag">#Educación</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel Lateral de Detalles -->
+                    <div class="portfolio-details-panel" id="portfolioDetailsPanel">
+                        <div class="detail-header">
+                            <span class="detail-tag" id="detailTag">#InstitucionesPúblicas</span>
+                            <h3 id="detailTitle">Defensoría de la Niñez</h3>
+                        </div>
+                        <div class="detail-body">
+                            <div class="detail-row">
+                                <strong>🎯 Reto del proyecto:</strong>
+                                <p id="detailProblem">Brecha en accesibilidad digital y necesidad de un canal
+                                    institucional seguro y transparente para la ciudadanía.</p>
+                            </div>
+                            <div class="detail-row">
+                                <strong>🛠️ Solución aplicada:</strong>
+                                <p id="detailSolution">Plataforma web con estándares WCAG 2.1 de accesibilidad, cifrado
+                                    avanzado y arquitectura de alta disponibilidad.</p>
+                            </div>
+                            <div class="detail-row meta-row">
+                                <div><strong>⏱️ Duración:</strong> <span id="detailTime">4 semanas</span></div>
+                            </div>
+                        </div>
+                        <div class="detail-footer">
+                            <a href="#contacto" class="btn btn-primary" id="detailSiteBtn">Cotizar proyecto similar
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                            <a href="https://www.defensorianinez.cl/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline-external" id="detailVisitBtn"
+                                aria-label="Visitar sitio web de Defensoría de la Niñez">
+                                Ir al sitio
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center mt-40">
+                <p class="text-subtle">¿No sabes qué necesitas? <a href="#contacto" class="link-brand">Nosotros te
+                        orientamos.</a></p>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 7: PLANES Y TARIFAS               -->
+        <!-- ========================================== -->
+        <section class="section pricing" id="planes">
+            <div class="container">
+                <div class="section-header text-center reveal-item" data-reveal="blur">
+                    <span class="section-tag">Planes y precios claros</span>
+                    <h2 class="section-title">Elige el punto de partida para tu negocio</h2>
+                    <p class="section-subtitle">Planes claros para comenzar a construir o mejorar tu presencia digital.
+                    </p>
+                </div>
+                <div class="pricing-grid">
+                    <!-- Plan 1 -->
+                    <div class="pricing-card tilt-card reveal-item" data-reveal="fade-up"
+                        onclick="window.location.href='#contacto'">
+                        <h3>Para comenzar</h3>
+                        <p class="pricing-desc">Una solución profesional para emprendedores y pequeños negocios que
+                            necesitan estar presentes en Internet.</p>
+                        <div class="price">$49.990</div>
+                        <ul class="pricing-features">
+                            <li>Diseño UI/UX Profesional</li>
+                            <li>100% Adaptable a Móviles</li>
+                            <li>Optimización SEO Básica</li>
+                            <li>Formulario de Contacto Seguro</li>
+                        </ul>
+                        <button class="btn btn-secondary-outline w-100 popup-trigger-btn"
+                            data-popup-target="popupPlanBasic" onclick="event.stopPropagation();">Ver más
+                            detalles</button>
+                    </div>
+                    <!-- Plan 2 (Destacado) -->
+                    <div class="pricing-card popular tilt-card reveal-item" data-reveal="fade-up"
+                        onclick="window.location.href='#contacto'">
+                        <div class="popular-badge">Más Elegido</div>
+                        <h3>Para crecer</h3>
+                        <p class="pricing-desc">Una solución más completa para negocios que necesitan una web a medida y
+                            más espacio para crecer.</p>
+                        <div class="price">$99.990</div>
+                        <ul class="pricing-features">
+                            <li>Landing Page de Alta Conversión</li>
+                            <li>Velocidad de Carga Superior</li>
+                            <li>Integración con WhatsApp Business</li>
+                            <li>Estructura Persuasiva AIDA</li>
+                        </ul>
+                        <button class="btn btn-primary w-100 popup-trigger-btn" data-popup-target="popupPlanEco"
+                            onclick="event.stopPropagation();">Ver más detalles</button>
+                    </div>
+                    <!-- Plan 3 -->
+                    <div class="pricing-card tilt-card reveal-item" data-reveal="fade-up"
+                        onclick="window.location.href='#contacto'">
+                        <h3>Para avanzar sin límites</h3>
+                        <p class="pricing-desc">Una solución pensada para negocios que necesitan una presencia digital
+                            más completa, flexible y preparada para evolucionar.</p>
+                        <div class="price">$199.990</div>
+                        <ul class="pricing-features">
+                            <li>Sitio Corporativo Avanzado</li>
+                            <li>Arquitectura Optimizada</li>
+                            <li>Soporte Técnico de 3 Meses</li>
+                            <li>Panel de Gestión Autoadministrable</li>
+                        </ul>
+                        <button class="btn btn-secondary-outline w-100 popup-trigger-btn"
+                            data-popup-target="popupPlanEmp" onclick="event.stopPropagation();">Ver más
+                            detalles</button>
+                    </div>
+                </div>
+
+                <div class="text-center mt-40">
+                    <p class="text-subtle">¿No necesitas tenerlo todo definido? <a href="#contacto"
+                            class="link-brand">Podemos ayudarte a aterrizar la idea.</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 8: PREGUNTAS FRECUENTES (FAQ)    -->
+        <!-- ========================================== -->
+        <section class="section faq" id="faq">
+            <div class="container">
+                <div class="section-header text-center reveal-item" data-reveal="blur">
+                    <span class="section-tag">Resolución de dudas</span>
+                    <h2 class="section-title">Preguntas frecuentes</h2>
+                    <p class="section-subtitle">Antes de comenzar, probablemente tengas algunas preguntas. Aquí
+                        respondemos las más habituales.</p>
+                </div>
+
+                <div class="faq-tabs reveal-item" data-reveal="fade-up">
+                    <button class="faq-tab active" data-target="tab-web">Desarrollo Web</button>
+                    <button class="faq-tab" data-target="tab-plataformas">Plataformas Empresariales</button>
+                    <button class="faq-tab" data-target="tab-cloud">Cloud & Infraestructura</button>
+                </div>
+
+                <!-- Pestaña 1 -->
+                <div class="faq-tab-content active" id="tab-web">
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question">¿Cuánto cuesta una página web?<span class="faq-icon"
+                                    aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Depende de lo que necesites. No cuesta lo mismo una página informativa que una tienda
+                                    online o una aplicación web. Primero entendemos tu proyecto y luego proponemos
+                                    una solución acorde a tus objetivos y presupuesto.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Cuánto demora desarrollar una web?<span class="faq-icon"
+                                    aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Depende de la cantidad de páginas, funcionalidades y nivel de personalización. Antes
+                                    de comenzar definimos un plazo claro para que sepas qué esperar.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿La web funcionará en celulares?<span class="faq-icon"
+                                    aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Sí. Todos nuestros proyectos se diseñan pensando en computadores, tablets y celulares
+                                    para que tus clientes tengan una buena experiencia desde cualquier dispositivo.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿La web quedará preparada para Google?<span class="faq-icon"
+                                    aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Sí. Trabajamos desde la estructura inicial considerando velocidad, contenido,
+                                    jerarquía de información, títulos, metadatos y buenas prácticas técnicas de SEO.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Puedo solicitar cambios después de publicar?<span
+                                    class="faq-icon" aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Sí. Podemos realizar ajustes y ofrecer planes de mantenimiento para que tu sitio siga
+                                    actualizado y evolucione junto con tu negocio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 2 -->
+                <div class="faq-tab-content" id="tab-plataformas">
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question">¿Qué tipo de plataformas pueden implementar?<span
+                                    class="faq-icon" aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Implementamos soluciones adaptadas a tus necesidades, como sistemas ERP, CRM,
+                                    intranets corporativas, plataformas de gestión documental y herramientas para
+                                    ordenar el flujo interno de tu empresa.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Las plataformas se pueden personalizar?<span class="faq-icon"
+                                    aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Sí. Configuramos y adaptamos plataformas como Odoo, BookStack y WordPress para que se
+                                    ajusten exactamente a la forma en que opera tu negocio y no al revés.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Se pueden instalar en un servidor propio o VPS?<span
+                                    class="faq-icon" aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Absolutamente. Preparamos y configuramos tu propio entorno cloud o servidor privado
+                                    para que tengas el control total y seguro de tu información.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Cómo se adaptan a los procesos de la empresa?<span
+                                    class="faq-icon" aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Primero conversamos contigo para entender tus tareas diarias y cuellos de botella. A
+                                    partir de eso, estructuramos el sistema para reducir tareas repetitivas y facilitar
+                                    el trabajo de tu equipo.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Ofrecen soporte y mantenimiento posterior?<span
+                                    class="faq-icon" aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Sí, te acompañamos después de la puesta en marcha con soporte técnico,
+                                    actualizaciones preventivas y asistencia para que tu equipo trabaje con
+                                    tranquilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 3 -->
+                <div class="faq-tab-content" id="tab-cloud">
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question">¿Qué es un servidor VPS?<span class="faq-icon"
+                                    aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Es un servidor virtual privado exclusivo para tu negocio. A diferencia del
+                                    alojamiento compartido tradicional, te otorga mayor velocidad, estabilidad y control
+                                    absoluto sobre tus recursos digitales.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Para qué sirve administrar un servidor?<span class="faq-icon"
+                                    aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Significa que nos encargamos de configurarlo, optimizarlo y mantenerlo actualizado
+                                    para que tus sitios y sistemas funcionen rápido y sin interrupciones molestas.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Cómo protegen la seguridad y el firewall?<span
+                                    class="faq-icon" aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Establecemos reglas estrictas de acceso, filtramos tráfico malicioso mediante
+                                    cortafuegos configurados en Linux y aplicamos parches de seguridad periódicos.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Realizan copias de seguridad (backups)?<span class="faq-icon"
+                                    aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Sí. Programamos respaldos automáticos y cifrados de tu información para que, ante
+                                    cualquier imprevisto, tus datos puedan recuperarse rápidamente.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿En qué consiste el monitoreo y mantenimiento?<span
+                                    class="faq-icon" aria-hidden="true">+</span></button>
+                            <div class="faq-answer">
+                                <p>Vigilamos el estado de salud de tus servidores de forma preventiva para detectar y
+                                    solucionar cualquier anomalía antes de que afecte a tus clientes o a tu operación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 9: FORMULARIO DE CONTACTO        -->
+        <!-- ========================================== -->
+        <section class="section contact" id="contacto">
+            <div class="container contact-grid">
+                <div class="contact-info reveal-item" data-reveal="fade-left">
+                    <span class="section-tag">Cuéntanos qué necesitas</span>
+                    <h2>Conversemos sobre tu proyecto</h2>
+                    <p>No necesitas tener todos los detalles definidos. Cuéntanos qué quieres mejorar, qué problema
+                        estás enfrentando o qué tienes en mente y te ayudaremos a encontrar el camino adecuado.</p>
+                    <div class="contact-direct">
+                        <p><strong>WhatsApp Directo:</strong> <a href="https://wa.me/56938710338" target="_blank"
+                                rel="noopener">+56 938710338</a></p>
+                        <p><strong>Correo:</strong> <a href="mailto:contacto@neodata.cl">contacto@neodata.cl</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal-item" data-reveal="fade-right">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="nombre">Tu nombre *</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Pérez" required>
+                            <span class="error-msg">Por favor ingresa tu nombre.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa o negocio *</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Ej. Corporación SpA" required>
+                            <span class="error-msg">Por favor ingresa tu empresa o negocio.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico *</label>
+                            <input type="email" id="correo" name="correo" placeholder="carlos@empresa.com" required>
+                            <span class="error-msg">Ingresa un correo válido.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">WhatsApp / teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
+                            <span class="error-msg">Ingresa un número válido.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">¿Qué necesitas? *</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona una solución</option>
+                                <option value="web">Desarrollo Web Personalizado</option>
+                                <option value="plataformas">Plataformas Empresariales</option>
+                                <option value="cloud">Cloud & Infraestructura</option>
+                            </select>
+                            <span class="error-msg">Selecciona una solución.</span>
+                        </div>
+                        <div class="form-group full">
+                            <label for="mensaje">Cuéntanos un poco sobre tu proyecto *</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"
+                                placeholder="Por ejemplo: necesito una página web para mi negocio, quiero implementar un sistema para organizar documentos, necesito ayuda con mi servidor, etc."
+                                required></textarea>
+                            <span class="error-msg">Escribe un breve mensaje.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Quiero recibir orientación</button>
+                        <div id="formSuccess" class="form-success-msg" role="status">¡Solicitud recibida con éxito! Te
+                            responderemos dentro del horario de atención para revisar tu proyecto y orientarte sobre la
+                            mejor alternativa.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- PIE DE PÁGINA / FOOTER                    -->
+    <!-- ========================================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo" aria-label="Neodata - Inicio"><span class="logo-mark">N</span>eodata<span
+                        class="logo-dot">.</span>
+                    </a>
+                <p>Te ayudamos a convertir tus ideas y necesidades en soluciones digitales que realmente puedas
+                    utilizar.</p>
+                <div class="footer-socials" aria-label="Redes sociales">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>SOLUCIONES</h4>
+                <a href="#soluciones">Desarrollo Web</a>
+                <a href="#soluciones">Plataformas Empresariales</a>
+                <a href="#soluciones">Cloud & Infraestructura</a>
+                <a href="#planes">Planes</a>
+            </div>
+            <div class="footer-links">
+                <h4>EMPRESA</h4>
+                <a href="#proceso">Cómo trabajamos</a>
+                <a href="#portafolio">Proyectos</a>
+                <a href="#faq">Preguntas frecuentes</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-links">
+                <h4>CONTACTO</h4>
+                <a href="https://wa.me/56938710338" target="_blank" rel="noopener">WhatsApp: +56 938710338</a>
+                <a href="mailto:contacto@neodata.cl">contacto@neodata.cl</a>
+            </div>
+            <div class="footer-legal">
+                <h4>LEGAL</h4>
+                <a href="#">Privacidad</a>
+                <a href="#">Términos de servicio</a>
+            </div>
+        </div>
+        <div class="container footer-bottom text-center">
+            <p>&copy; 2026 Neodata. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante Lateral -->
+    <a href="https://wa.me/56938710338?text=Hola%20Neodata,%20deseo%20asesoría%20inmediata." class="whatsapp-float"
+        target="_blank" rel="noopener" aria-label="WhatsApp Directo">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg>
+        <span class="whatsapp-text">Hablemos!</span>
+    </a>
+
+    <!-- Ventana Modal de Popups Reutilizable -->
+    <div class="popup-overlay" id="unifiedPopupOverlay" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="popup-card">
+            <button class="popup-close" id="popupClose" aria-label="Cerrar ventana">&times;</button>
+            <div id="popupContentContainer"></div>
+        </div>
+    </div>
+
+    <!-- Templates para Popups -->
+    <template id="popupPlanBasic">
+        <span class="popup-tag">Para comenzar</span>
+        <h3>Desarrollo Web Esencial</h3>
+        <p>Diseñado para validar presencia institucional con máxima calidad visual y rapidez.</p>
+        <ul class="pricing-features text-left mb-20">
+            <li>Diseño UI/UX Profesional y limpio</li>
+            <li>100% Adaptable a Móviles y Tablets</li>
+            <li>Optimización SEO Básica estructurada</li>
+            <li>Formulario de Contacto Seguro integrado</li>
+            <li>Hosting optimizado y certificado SSL gratuito</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary w-100 popup-action-close">Quiero este plan</a>
+    </template>
+
+    <template id="popupPlanEco">
+        <span class="popup-tag">Para crecer</span>
+        <h3>Landing Page de Alta Conversión</h3>
+        <p>Solución equilibrada para pymes en etapa de digitalización acelerada y campañas de anuncios.</p>
+        <ul class="pricing-features text-left mb-20">
+            <li>Landing Page de Alta Conversión (AIDA/PAS)</li>
+            <li>Velocidad de Carga Superior</li>
+            <li>Integración directa con WhatsApp Business</li>
+            <li>Estructura Persuasiva y copys optimizados</li>
+            <li>3 Meses de soporte técnico inicial</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary w-100 popup-action-close">Quiero este plan</a>
+    </template>
+
+    <template id="popupPlanEmp">
+        <span class="popup-tag">Para avanzar sin límites</span>
+        <h3>Ecosistema Corporativo Avanzado</h3>
+        <p>Para empresas y corporaciones que requieren un despliegue digital completo y robusto.</p>
+        <ul class="pricing-features text-left mb-20">
+            <li>Sitio Corporativo Avanzado de Múltiples Páginas</li>
+            <li>Arquitectura optimizada garantizada</li>
+            <li>Soporte Técnico Prioritario de 3 Meses</li>
+            <li>Panel de Gestión Autoadministrable seguro</li>
+            <li>Integración con CRMs y pasarelas de pago</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary w-100 popup-action-close">Quiero este plan</a>
+    </template>
+
+    <!-- Scripts Modulares del Proyecto -->
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/scroll.js" defer></script>
+    <script src="assets/js/counter.js" defer></script>
+    <script src="assets/js/portfolio.js" defer></script>
+    <script src="assets/js/popup.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" preserveAspectRatio="xMinYMid meet" style="width: auto; height: 100%; max-height: 40px; display: block;">
+  <defs>
+    <!-- Gradiente Cyan / Blue Principal -->
+    <linearGradient id="neoCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#0072FF" />
+    </linearGradient>
+
+    <!-- Gradiente Púrpura de Acento -->
+    <linearGradient id="neoPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7F00FF" />
+      <stop offset="100%" stop-color="#E100FF" />
+    </linearGradient>
+
+    <style>
+      /* --- 1. MODO CLARO (Light Mode por defecto) --- */
+      :root {
+        --neosis-text-primary: #0F172A;   /* Slate oscuro para el texto "neo" */
+        --neosis-text-sub: #64748B;       /* Gris medio para bajada de texto */
+        --neosis-node-dot: #0F172A;       /* Nodos oscuros */
+        --neosis-glow-opacity: 0.1;
+      }
+
+      /* --- 2. MODO OSCURO (Detectado automáticamente desde el SO/Navegador) --- */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --neosis-text-primary: #FFFFFF; /* Texto blanco en Dark Mode */
+          --neosis-text-sub: #94A3B8;     /* Gris claro */
+          --neosis-node-dot: #FFFFFF;     /* Nodos blancos */
+          --neosis-glow-opacity: 0.22;
+        }
+      }
+
+      /* --- 3. COMPATIBILIDAD CON TOGGLES MANUALES DE TU WEB (.dark / [data-theme="dark"]) --- */
+      .dark svg, [data-theme="dark"] svg, body.dark-mode svg {
+        --neosis-text-primary: #FFFFFF !important;
+        --neosis-text-sub: #94A3B8 !important;
+        --neosis-node-dot: #FFFFFF !important;
+        --neosis-glow-opacity: 0.22 !important;
+      }
+
+      .light svg, [data-theme="light"] svg, body.light-mode svg {
+        --neosis-text-primary: #0F172A !important;
+        --neosis-text-sub: #64748B !important;
+        --neosis-node-dot: #0F172A !important;
+        --neosis-glow-opacity: 0.1 !important;
+      }
+
+      /* Reglas de transición suave de color */
+      .brand-title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        fill: var(--neosis-text-primary);
+        letter-spacing: -0.5px;
+        transition: fill 0.3s ease;
+      }
+      .brand-accent {
+        fill: url(#neoCyan);
+      }
+      .brand-domain {
+        fill: #64748B;
+        font-weight: 400;
+        font-size: 13px;
+      }
+      .brand-sub {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 6px;
+        fill: var(--neosis-text-sub);
+        letter-spacing: 1.2px;
+        transition: fill 0.3s ease;
+      }
+      .node-dot {
+        fill: var(--neosis-node-dot);
+        transition: fill 0.3s ease;
+      }
+      .aura-glow {
+        fill: url(#neoCyan);
+        opacity: var(--neosis-glow-opacity);
+        transition: opacity 0.3s ease;
+      }
+    </style>
+  </defs>
+
+  <!-- ISOTIPO "N" ISOMÉTRICA -->
+  <g transform="translate(0, 2) scale(0.18)">
+    <circle cx="100" cy="105" r="70" class="aura-glow"/>
+
+    <!-- Pilar Izquierdo -->
+    <path d="M 60,50 L 95,30 L 95,180 L 60,160 Z" fill="url(#neoCyan)" opacity="0.95"/>
+    <path d="M 60,50 L 95,30 L 130,50 L 95,70 Z" fill="#00F2FE" opacity="0.85"/>
+
+    <!-- Puente Diagonal -->
+    <path d="M 95,70 L 130,50 L 130,140 L 95,160 Z" fill="url(#neoPurple)" opacity="0.9"/>
+    <path d="M 95,160 L 130,140 L 165,160 L 130,180 Z" fill="#E100FF" opacity="0.75"/>
+
+    <!-- Pilar Derecho -->
+    <path d="M 130,90 L 165,70 L 165,180 L 130,160 Z" fill="url(#neoCyan)" opacity="0.9"/>
+    <path d="M 130,90 L 165,70 L 165,120 L 130,140 Z" fill="#00F2FE"/>
+
+    <!-- Nodos dinámicos -->
+    <circle cx="60" cy="50" r="5" class="node-dot"/>
+    <circle cx="95" cy="30" r="5" class="node-dot"/>
+    <circle cx="165" cy="70" r="5" class="node-dot"/>
+    <circle cx="95" cy="160" r="5" class="node-dot"/>
+    <circle cx="130" cy="140" r="5" class="node-dot"/>
+    <circle cx="60" cy="160" r="4.5" class="node-dot"/>
+    <circle cx="165" cy="180" r="4.5" class="node-dot"/>
+  </g>
+
+  <!-- TEXTO NEOSIS ADAPTABLE -->
+  <text x="40" y="23" class="brand-title">neo<tspan class="brand-accent">sis</tspan><tspan class="brand-domain">.cl</tspan></text>
+  <text x="41" y="32" class="brand-sub">TECNOLOGÍA • NUBE • DESARROLLO</text>
+</svg>

@@ -1,0 +1,405 @@
+/* ========================================================================== */
+/* NEODATA - DISEÑO RESPONSIVE Y MÓVIL (responsive.css)                      */
+/* Dependencia: style.css (Variables globales y tokens de diseño)             */
+/* ========================================================================== */
+
+/* ========================================================================== */
+/* 1. BLOQUEO DE SCROLL EN BODY CUANDO EL MENÚ MÓVIL ESTÁ ABIERTO             */
+/* ========================================================================== */
+
+body.menu-open {
+    overflow: hidden !important;
+    touch-action: none;
+}
+
+/* ========================================================================== */
+/* 2. BREAKPOINT: TABLETS Y PANTALLAS MEDIANAS (<= 1024px)                    */
+/* ========================================================================== */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Grillas a 2 columnas */
+    .pilares-grid,
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .metrics-grid-layout,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .portfolio-master-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .workflow-steps-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 20px;
+    }
+
+    .workflow-connecting-line {
+        display: none;
+        /* Ocultamos línea horizontal rígida en tablets */
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+/* ========================================================================== */
+/* 3. BREAKPOINT: DISPOSITIVOS MÓVILES (<= 768px)                             */
+/* ========================================================================== */
+
+@media (max-width: 768px) {
+
+    .hero-video-overlay {
+        /* En pantallas móviles el texto ocupa casi todo el ancho, por lo que usamos un fondo oscuro parejo */
+        background: rgba(7, 10, 18, 0.82) !important;
+    }
+
+    [data-theme="light"] .hero-video-overlay {
+        background: rgba(248, 250, 252, 0.88) !important;
+    }
+    
+    /* --- AJUSTES GENERALES Y TIPOGRAFÍA --- */
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-header {
+        margin-bottom: 35px;
+    }
+
+    .section-title {
+        font-size: 1.85rem;
+    }
+
+    /* --- NAVEGACIÓN Y MENÚ RESPONSIVE (GLASSMORPHISM FULLSCREEN) --- */
+    .desktop-cta,
+    .nav-actions {
+        display: none !important;
+    }
+
+    .mobile-toggle {
+        display: flex;
+    }
+
+    /* --- NAVEGACIÓN Y MENÚ RESPONSIVE (DARK GLASSMORPHISM OPACO) --- */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        /* Color sólido casi oscuro + opacidad leve para tapar el contenido posterior */
+        background: rgba(12, 16, 29, 0.96) !important;
+        backdrop-filter: blur(25px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 90px 24px 30px;
+        margin: 0;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+            visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+            transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        overflow-y: auto;
+        padding-top: 80px !important;
+    }
+
+    [data-theme="light"] .nav-menu {
+        /* Mantener fondo oscuro traslúcido en modo claro para legibilidad óptima */
+        background: rgba(15, 23, 42, 0.96) !important;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* Enlaces con Área Táctil Completa (Full Touch Target) */
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 14px 18px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: var(--radius-lg);
+        margin-bottom: 10px;
+        text-align: left;
+        transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .nav-link:not(:last-child)::after {
+        display: none;
+        /* Eliminar separadores de escritorio */
+    }
+
+    .nav-link::before {
+        display: none;
+    }
+
+    .nav-link:active,
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.12);
+        border-color: var(--color-brand-primary);
+        color: var(--color-brand-primary);
+        transform: scale(0.99);
+    }
+
+    /* BLOQUE INFERIOR ANCLADO: CONTROLES Y CTA PRINCIPAL */
+    .mobile-only-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .mobile-controls-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .mobile-controls-row .control-glass-btn {
+        width: 46px;
+        height: 46px;
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+    }
+
+    .mobile-controls-row .control-glass-btn svg {
+        stroke: #ffffff;
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile-thumb-cta {
+        padding: 16px;
+        font-size: 1rem;
+        font-weight: 700;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* --- HERO SECTION MÓVIL --- */
+    .hero {
+        padding: 100px 0 50px;
+        min-height: auto;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-cta-group .btn {
+        width: 100%;
+    }
+
+    /* --- PILARES Y SERVICIOS --- */
+    .pilares-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pilar-card,
+    .pricing-card {
+        padding: 28px 20px;
+    }
+
+    /* --- TICKER / MARQUEE DE CLIENTES --- */
+    .ticker-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .ticker-logo-item {
+        width: 110px;
+    }
+
+    .ticker-logo-item img {
+        max-width: 85px;
+        height: 45px;
+    }
+
+    /* --- FLUTO DE TRABAJO (WORKFLOW) --- */
+    .workflow-steps-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .workflow-step-item {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        gap: 16px;
+        background: var(--color-surface-card);
+        padding: 16px;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border-subtle);
+    }
+
+    .step-circle-badge {
+        margin-bottom: 0;
+        width: 48px;
+        height: 48px;
+        font-size: 1.05rem;
+        flex-shrink: 0;
+    }
+
+    /* --- MÉTRICAS MÓVIL --- */
+    .metrics-circles-grid {
+        min-height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .metric-circle-card {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1;
+    }
+
+    .metric-circle-card .metric-inner-content {
+        width: 80% !important;
+        height: 80% !important;
+        padding: 10px;
+    }
+
+    .metric-circle-card .metric-number {
+        font-size: 1.4rem !important;
+    }
+
+    .metric-circle-card .metric-label {
+        font-size: 0.65rem !important;
+    }
+
+    .operational-stability-bar {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* --- PORTAFOLIO EN MÓVIL --- */
+    .portfolio-controls-bar {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .portfolio-details-panel {
+        padding: 24px 18px;
+    }
+
+    .meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* --- FORMULARIO Y FOOTER --- */
+    .contact-form {
+        grid-template-columns: 1fr;
+        padding: 24px 18px;
+    }
+
+    .form-group.full {
+        grid-column: span 1;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* --- BOTÓN FLOTANTE WHATSAPP EN MÓVIL --- */
+    .whatsapp-float {
+        top: auto;
+        bottom: 20px;
+        transform: none;
+        right: 15px;
+        border-radius: var(--radius-full);
+        padding: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .whatsapp-text {
+        display: none;
+        /* Icono limpio sin texto para no invadir espacio en pantallas pequeñas */
+    }
+
+    .whatsapp-float:hover,
+    .whatsapp-float:focus-visible {
+        right: 15px;
+    }
+
+    /* Modales */
+    .popup-card {
+        padding: 30px 20px;
+        width: 92%;
+    }
+}
+
+/* ========================================================================== */
+/* 4. AJUSTES PARA PANTALLAS MUY PEQUEÑAS (<= 380px)                          */
+/* ========================================================================== */
+
+@media (max-width: 380px) {
+    .metrics-circles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+}
