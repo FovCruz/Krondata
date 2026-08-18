@@ -9,7 +9,7 @@
         content="Ayudamos a PYMEs, emprendedores y profesionales a digitalizar, mejorar y mantener sus negocios mediante desarrollo web, plataformas empresariales y servidores cloud.">
     <meta name="keywords"
         content="desarrollo web, páginas web, diseño web, plataformas empresariales, Odoo, BookStack, ERP, CRM, infraestructura cloud, servidores VPS, administración de servidores, Linux, Docker, Nginx, seguridad de servidores, backups, desarrollo web para empresas, soluciones digitales para PYMEs">
-    
+
     <!-- Enlace canónico actualizado con el dominio KRONDATA -->
     <link rel="canonical" href="https://krondata.cl/">
 
@@ -71,153 +71,86 @@
     <header class="header" id="header">
         <div class="container nav-container">
             <!-- Logotipo SVG Vectorial de KRONDATA -->
-            <a href="/index.html" style="display: flex; align-items: center; height: 40px; flex-shrink: 0; text-decoration: none;" aria-label="KRONDATA - Inicio">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1250" width="100%" height="100%" aria-hidden="true">
-                  <defs>
-                    <!-- GRADIENTES Y FILTROS PARA LOGOS (ORO / CHAMPAGNE) -->
-                    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#FFF8EE" />
-                      <stop offset="35%" stop-color="#F3E0C8" />
-                      <stop offset="70%" stop-color="#D8B280" />
-                      <stop offset="100%" stop-color="#A67B46" />
-                    </linearGradient>
+            <a href="/index.html"
+                style="display: flex; align-items: center; height: 35px; flex-shrink: 0; text-decoration: none;"
+                aria-label="KRONDATA - Inicio">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 68" width="100%" height="100%" role="img"
+                    aria-label="KRONDATA - Logo">
+                    <defs>
+                        <!-- GRADIENTES ORO / CHAMPÁN -->
+                        <linearGradient id="kdGoldRibbon" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#FFFFFF" />
+                            <stop offset="25%" stop-color="#FBEBD6" />
+                            <stop offset="65%" stop-color="#DDB37A" />
+                            <stop offset="100%" stop-color="#8F6229" />
+                        </linearGradient>
 
-                    <linearGradient id="goldDark" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#E2C193" />
-                      <stop offset="50%" stop-color="#B88E56" />
-                      <stop offset="100%" stop-color="#6E4D21" />
-                    </linearGradient>
+                        <linearGradient id="kdGoldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#6E4D21" />
+                            <stop offset="100%" stop-color="#211506" />
+                        </linearGradient>
 
-                    <linearGradient id="goldRibbon" x1="0%" y1="20%" x2="100%" y2="80%">
-                      <stop offset="0%" stop-color="#FFFFFF" />
-                      <stop offset="25%" stop-color="#FBEBD6" />
-                      <stop offset="60%" stop-color="#DDB37A" />
-                      <stop offset="100%" stop-color="#8F6229" />
-                    </linearGradient>
+                        <!-- GRADIENTE NARANJA / FUEGO TECNOLÓGICO -->
+                        <linearGradient id="kdOrangeCore" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FFBA42" />
+                            <stop offset="50%" stop-color="#FF6B00" />
+                            <stop offset="100%" stop-color="#CC3300" />
+                        </linearGradient>
 
-                    <linearGradient id="orangeChannel" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stop-color="#FFBA42" />
-                      <stop offset="50%" stop-color="#FF6B00" />
-                      <stop offset="100%" stop-color="#CC3300" />
-                    </linearGradient>
+                        <!-- FILTROS DE SOMBRA PROFUNDA Y GLOW -->
+                        <filter id="kdTextShadow3D" x="-10%" y="-10%" width="130%" height="130%">
+                            <feDropShadow dx="1.5" dy="2.5" stdDeviation="1.5" flood-color="#000000"
+                                flood-opacity="0.85" />
+                        </filter>
+                        <filter id="kdGlow" x="-30%" y="-30%" width="160%" height="160%">
+                            <feGaussianBlur stdDeviation="2" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
 
-                    <!-- GRADIENTES PARA METAL METÁLICO OSCURO -->
-                    <linearGradient id="darkMetal1" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#525763" />
-                      <stop offset="50%" stop-color="#2D313A" />
-                      <stop offset="100%" stop-color="#14161B" />
-                    </linearGradient>
+                    <style>
+                        .brand-title-base {
+                            font-family: 'Montserrat', 'Inter', -apple-system, sans-serif;
+                            font-size: 38px;
+                            font-weight: 900;
+                            letter-spacing: 3.5px;
+                        }
 
-                    <linearGradient id="darkMetal2" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#3A3E47" />
-                      <stop offset="100%" stop-color="#1A1C22" />
-                    </linearGradient>
+                        .brand-title-3d {
+                            fill: url(#kdGoldDark);
+                        }
 
-                    <!-- FILTROS DE SOMBRA Y GLOW -->
-                    <filter id="shadow3D" x="-20%" y="-20%" width="150%" height="150%">
-                      <feDropShadow dx="4" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.6" />
-                    </filter>
-                    <filter id="glowOrange" x="-30%" y="-30%" width="160%" height="160%">
-                      <feGaussianBlur stdDeviation="4" result="blur" />
-                      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                    </filter>
-                  </defs>
+                        .brand-title-front {
+                            fill: url(#kdGoldRibbon);
+                        }
 
-                  <style>
-                    .bg-dark { fill: #0A0D14; rx: 16px; stroke: #1E2638; stroke-width: 1.5px; }
-                    .bg-light { fill: #F4F6F9; rx: 16px; stroke: #D1D8E2; stroke-width: 1.5px; }
-                    .brand-text-gold { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 110px; font-weight: 900; letter-spacing: 5px; fill: url(#goldRibbon); }
-                    .tagline-gold { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 30px; font-weight: 500; letter-spacing: 12px; fill: #E2C193; opacity: 0.95; }
-                    
-                    .brand-text-dark { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 110px; font-weight: 900; letter-spacing: 5px; fill: #0C1017; }
-                    .tagline-dark { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 30px; font-weight: 600; letter-spacing: 12px; fill: #1E2532; }
+                        .brand-subtitle {
+                            font-family: 'Montserrat', 'Inter', -apple-system, sans-serif;
+                            font-size: 8.5px;
+                            font-weight: 700;
+                            letter-spacing: 4.8px;
+                            fill: #E2C193;
+                            opacity: 0.95;
+                        }
 
-                    .brand-text-champagne { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 110px; font-weight: 900; letter-spacing: 5px; fill: #FCEFD2; }
-                    .tagline-champagne { font-family: 'Montserrat', 'Inter', sans-serif; font-size: 30px; font-weight: 500; letter-spacing: 12px; fill: #D2B48C; opacity: 0.95; }
-                  </style>
+                        .brand-dot {
+                            fill: url(#kdOrangeCore);
+                        }
+                    </style>
 
-                  <!-- LOGO PRINCIPAL (FONDO OSCURO / ORO) -->
-                  <g transform="translate(40, 40)">
-                    <rect width="1520" height="520" class="bg-dark"/>
+                    <!-- GRUPO PRINCIPAL CON ORIGEN MÉTICULOSAMENTE ALINEADO (X=2, Y=36) -->
+                    <g transform="translate(2, 36)">
+                        <!-- 1. BISULACIÓN Y SOMBRA 3D EN EL TEXTO -->
+                        <text x="2" y="2" class="brand-title-base brand-title-3d"
+                            filter="url(#kdTextShadow3D)">KRONDATA</text>
+                        <text x="1" y="1" class="brand-title-base brand-title-3d">KRONDATA</text>
 
-                    <g transform="translate(80, 80)">
-                      <g filter="url(#shadow3D)">
-                        <path d="M 62 40 L 62 340 L 78 340 L 78 40 Z" fill="url(#orangeChannel)" filter="url(#glowOrange)"/>
-                        <path d="M 20 40 L 60 40 L 60 340 L 20 340 Z" fill="url(#goldLight)"/>
-                        <path d="M 10 50 L 20 40 L 20 340 L 10 330 Z" fill="url(#goldDark)" opacity="0.7"/>
-                        <path d="M 80 40 L 110 40 L 110 340 L 80 340 Z" fill="url(#goldDark)"/>
-                        <path d="M 80 40 L 95 40 L 95 340 L 80 340 Z" fill="url(#goldLight)" opacity="0.6"/>
-                        <path d="M 60 190 Q 150 110 250 50 Q 220 120 110 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
-                        <path d="M 50 200 C 90 150, 160 80, 270 40 C 290 33, 310 45, 290 70 C 230 140, 150 210, 80 240 Z" fill="url(#goldRibbon)"/>
-                        <path d="M 75 190 C 130 135, 200 85, 280 50 C 285 58, 270 80, 220 120 C 160 160, 110 195, 75 190 Z" fill="url(#goldDark)" opacity="0.85"/>
-                        <path d="M 80 200 Q 180 230, 270 330 Q 190 260 70 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
-                        <path d="M 75 190 C 120 220, 200 270, 285 330 C 298 340, 285 355, 265 350 C 190 310, 120 250, 60 215 Z" fill="url(#goldRibbon)"/>
-                        <path d="M 90 215 C 140 245, 210 295, 275 338 C 260 342, 230 330, 180 285 C 130 245, 95 220, 90 215 Z" fill="url(#goldDark)" opacity="0.85"/>
-                        <path d="M 52 195 C 100 140, 170 75, 278 43" stroke="#FFFFFF" stroke-width="3" opacity="0.7" fill="none"/>
-                        <path d="M 78 195 C 125 225, 205 275, 278 333" stroke="#FFFFFF" stroke-width="2.5" opacity="0.6" fill="none"/>
-                      </g>
+                        <!-- 2. CAPA FRONTAL PRINCIPAL -->
+                        <text x="0" y="0" class="brand-title-base brand-title-front">KRONDATA</text>
 
-                      <g transform="translate(380, 210)">
-                        <text x="0" y="0" class="brand-text-gold">KRONDATA</text>
-                        <text x="8" y="70" class="tagline-gold">TECNOLOGÍA · NUBE · DESARROLLO</text>
-                      </g>
+                        <!-- 4. SUBTÍTULO EXACTAMENTE CENTRADO BAJO EL TEXTO PRINCIPAL -->
+                        <text x="1.5" y="19" class="brand-subtitle">TECNOLOGÍA · NUBE · DESARROLLO</text>
                     </g>
-                  </g>
-
-                  <!-- LOGO SECUNDARIO (FONDO CLARO) -->
-                  <g transform="translate(40, 600)">
-                    <rect width="740" height="600" class="bg-light"/>
-
-                    <g transform="translate(35, 110) scale(0.68)">
-                      <g filter="url(#shadow3D)">
-                        <path d="M 62 40 L 62 340 L 78 340 L 78 40 Z" fill="url(#orangeChannel)" filter="url(#glowOrange)"/>
-                        <path d="M 20 40 L 60 40 L 60 340 L 20 340 Z" fill="url(#darkMetal1)"/>
-                        <path d="M 10 50 L 20 40 L 20 340 L 10 330 Z" fill="url(#darkMetal2)"/>
-                        <path d="M 80 40 L 110 40 L 110 340 L 80 340 Z" fill="url(#darkMetal2)"/>
-                        <path d="M 80 40 L 95 40 L 95 340 L 80 340 Z" fill="url(#darkMetal1)" opacity="0.6"/>
-                        <path d="M 60 190 Q 150 110 250 50 Q 220 120 110 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
-                        <path d="M 50 200 C 90 150, 160 80, 270 40 C 290 33, 310 45, 290 70 C 230 140, 150 210, 80 240 Z" fill="url(#darkMetal1)"/>
-                        <path d="M 75 190 C 130 135, 200 85, 280 50 C 285 58, 270 80, 220 120 C 160 160, 110 195, 75 190 Z" fill="url(#darkMetal2)"/>
-                        <path d="M 80 200 Q 180 230, 270 330 Q 190 260 70 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
-                        <path d="M 75 190 C 120 220, 200 270, 285 330 C 298 340, 285 355, 265 350 C 190 310, 120 250, 60 215 Z" fill="url(#darkMetal1)"/>
-                        <path d="M 90 215 C 140 245, 210 295, 275 338 C 260 342, 230 330, 180 285 C 130 245, 95 220, 90 215 Z" fill="url(#darkMetal2)"/>
-                        <path d="M 52 195 C 100 140, 170 75, 278 43" stroke="#8A95A5" stroke-width="2.5" opacity="0.6" fill="none"/>
-                      </g>
-
-                      <g transform="translate(360, 210)">
-                        <text x="0" y="0" class="brand-text-dark">KRONDATA</text>
-                        <text x="5" y="70" class="tagline-dark">TECNOLOGÍA · NUBE · DESARROLLO</text>
-                      </g>
-                    </g>
-                  </g>
-
-                  <!-- LOGO COMPACTO (FONDO OSCURO / CREMA) -->
-                  <g transform="translate(820, 600)">
-                    <rect width="740" height="600" class="bg-dark"/>
-
-                    <g transform="translate(35, 110) scale(0.68)">
-                      <g filter="url(#shadow3D)">
-                        <path d="M 62 40 L 62 340 L 78 340 L 78 40 Z" fill="url(#orangeChannel)" filter="url(#glowOrange)"/>
-                        <path d="M 20 40 L 60 40 L 60 340 L 20 340 Z" fill="url(#goldLight)"/>
-                        <path d="M 10 50 L 20 40 L 20 340 L 10 330 Z" fill="url(#goldDark)" opacity="0.7"/>
-                        <path d="M 80 40 L 110 40 L 110 340 L 80 340 Z" fill="url(#goldDark)"/>
-                        <path d="M 80 40 L 95 40 L 95 340 L 80 340 Z" fill="url(#goldLight)" opacity="0.6"/>
-                        <path d="M 60 190 Q 150 110 250 50 Q 220 120 110 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
-                        <path d="M 50 200 C 90 150, 160 80, 270 40 C 290 33, 310 45, 290 70 C 230 140, 150 210, 80 240 Z" fill="url(#goldRibbon)"/>
-                        <path d="M 75 190 C 130 135, 200 85, 280 50 C 285 58, 270 80, 220 120 C 160 160, 110 195, 75 190 Z" fill="url(#goldDark)" opacity="0.85"/>
-                        <path d="M 80 200 Q 180 230, 270 330 Q 190 260 70 210 Z" fill="url(#orangeChannel)" opacity="0.95"/>
-                        <path d="M 75 190 C 120 220, 200 270, 285 330 C 298 340, 285 355, 265 350 C 190 310, 120 250, 60 215 Z" fill="url(#goldRibbon)"/>
-                        <path d="M 90 215 C 140 245, 210 295, 275 338 C 260 342, 230 330, 180 285 C 130 245, 95 220, 90 215 Z" fill="url(#goldDark)" opacity="0.85"/>
-                        <path d="M 52 195 C 100 140, 170 75, 278 43" stroke="#FFFFFF" stroke-width="3" opacity="0.7" fill="none"/>
-                        <path d="M 78 195 C 125 225, 205 275, 278 333" stroke="#FFFFFF" stroke-width="2.5" opacity="0.6" fill="none"/>
-                      </g>
-
-                      <g transform="translate(360, 210)">
-                        <text x="0" y="0" class="brand-text-champagne">KRONDATA</text>
-                        <text x="5" y="70" class="tagline-champagne">TECNOLOGÍA · NUBE · DESARROLLO</text>
-                      </g>
-                    </g>
-                  </g>
                 </svg>
             </a>
 
@@ -875,7 +808,8 @@
                             <li>Integración con WhatsApp Business</li>
                             <li>Estructura Persuasiva AIDA</li>
                         </ul>
-                        <button class="btn btn-primary w-100 popup-trigger-btn" data-popup-target="popupPlanEco">Ver más detalles</button>
+                        <button class="btn btn-primary w-100 popup-trigger-btn" data-popup-target="popupPlanEco">Ver más
+                            detalles</button>
                     </div>
                     <!-- Plan 3 -->
                     <div class="pricing-card tilt-card reveal-item" data-reveal="fade-up">
@@ -1146,9 +1080,12 @@
                 <p>Te ayudamos a convertir tus ideas y necesidades en soluciones digitales que realmente puedas
                     utilizar.</p>
                 <div class="footer-socials" aria-label="Redes sociales">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">GitHub</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter">Twitter</a>
                 </div>
             </div>
             <div class="footer-links">
@@ -1167,7 +1104,8 @@
             </div>
             <div class="footer-links">
                 <h4>CONTACTO</h4>
-                <a href="https://wa.me/56938710338" target="_blank" rel="noopener noreferrer">WhatsApp: +56 9 3871 0338</a>
+                <a href="https://wa.me/56938710338" target="_blank" rel="noopener noreferrer">WhatsApp: +56 9 3871
+                    0338</a>
                 <a href="mailto:contacto@krondata.cl">contacto@krondata.cl</a>
             </div>
             <div class="footer-legal">
@@ -1182,8 +1120,8 @@
     </footer>
 
     <!-- Botón Flotante Lateral de WhatsApp -->
-    <a href="https://wa.me/56938710338?text=Hola%20KRONDATA,%20deseo%20asesor%C3%ADa%20inmediata." class="whatsapp-float"
-        target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Directo">
+    <a href="https://wa.me/56938710338?text=Hola%20KRONDATA,%20deseo%20asesor%C3%ADa%20inmediata."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Directo">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true">
             <path
                 d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
