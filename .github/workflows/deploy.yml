@@ -1,0 +1,22 @@
+name: Deploy Krondata Web
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Executing remote SSH commands
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /opt/docker-apps/krondata-web/html
+            git pull origin main
+            cd /opt/docker-apps/krondata-web
+            docker compose restart
