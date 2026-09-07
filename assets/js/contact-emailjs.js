@@ -11,7 +11,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         const contactForm = document.getElementById("contactForm");
         const submitBtn = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
-        
+
         // Elementos del Modal Unificado Glassmorphism
         const popupOverlay = document.getElementById("unifiedPopupOverlay");
         const popupContainer = document.getElementById("popupContentContainer");
@@ -75,7 +75,7 @@
             };
 
             // Reemplaza 'YOUR_SERVICE_ID' y 'YOUR_TEMPLATE_ID' con tus credenciales de EmailJS
-            emailjs.send("service_b1xyqge", "template_czkkbfk", templateParams)
+            emailjs.send("service_b1xyqge", "template_ej70wjl", templateParams)
                 .then(function (response) {
                     // Éxito en el envío
                     contactForm.reset();
@@ -86,8 +86,9 @@
                     showSuccessGlassmodal();
                 })
                 .catch(function (error) {
-                    console.error("Error al enviar el mensaje por EmailJS:", error);
-                    alert("Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo o contáctanos por WhatsApp.");
+                    console.error("Error completo EmailJS:", error);
+                    // Te mostrará el texto exacto de la falla (ej: "The user_id provided is invalid", "template_id not found", etc.)
+                    alert("Error de EmailJS: " + (error.text || JSON.stringify(error)));
                     submitBtn.disabled = false;
                     submitBtn.textContent = originalBtnText;
                 });
@@ -105,7 +106,7 @@
                 </div>
                 <span class="popup-tag">Solicitud Recepcionada</span>
                 <h3>¡Mensaje Enviado con Éxito!</h3>
-                <p>Hemos recibido tus datos correctamente en nuestra central (qt.krondata@gmail.com). Nuestro equipo revisará la información de tu proyecto y se contactará contigo a la brevedad.</p>
+                <p>Hemos recibido tus datos correctamente. Nuestro equipo revisará la información de tu proyecto y se contactará contigo a la brevedad.</p>
                 <button type="button" class="btn btn-primary w-100" id="closeSuccessModalBtn">Entendido</button>
             `;
 
