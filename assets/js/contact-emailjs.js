@@ -86,9 +86,8 @@
                     showSuccessGlassmodal();
                 })
                 .catch(function (error) {
-                    console.error("Error completo EmailJS:", error);
-                    // Te mostrará el texto exacto de la falla (ej: "The user_id provided is invalid", "template_id not found", etc.)
-                    alert("Error de EmailJS: " + (error.text || JSON.stringify(error)));
+                    console.error("Error al enviar el mensaje por EmailJS:", error);
+                    alert("Ocurrió un error al enviar el mensaje. Por favor intenta de nuevo o contáctanos por WhatsApp.");
                     submitBtn.disabled = false;
                     submitBtn.textContent = originalBtnText;
                 });
