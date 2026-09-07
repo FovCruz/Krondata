@@ -1012,13 +1012,12 @@
                     <div class="contact-direct">
                         <p><strong>WhatsApp Directo:</strong> <a href="https://wa.me/56938710338" target="_blank"
                                 rel="noopener noreferrer">+56 9 3871 0338</a></p>
-                        <p><strong>Correo:</strong> <a href="mailto:contacto@krondata.cl">contacto@krondata.cl</a></p>
+                        <p><strong>Correo:</strong> <a href="mailto:qt.krondata@gmail.com">contacto@krondata.cl</a></p>
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper reveal-item" data-reveal="fade-right">
                     <form id="contactForm" class="contact-form" novalidate>
-                        <!-- Campo oculto anti-spam (Honeypot) -->
                         <input type="text" name="b_honeypot" tabindex="-1" style="display:none;" autocomplete="off">
 
                         <div class="form-group">
@@ -1045,29 +1044,32 @@
                             <label for="servicio">¿Qué necesitas? *</label>
                             <select id="servicio" name="servicio" required>
                                 <option value="">Selecciona una solución</option>
-                                <option value="web">Desarrollo Web Personalizado</option>
-                                <option value="plataformas">Plataformas Empresariales</option>
-                                <option value="cloud">Cloud & Infraestructura</option>
+                                <option value="Desarrollo Web Personalizado">Desarrollo Web Personalizado</option>
+                                <option value="Plataformas Empresariales">Plataformas Empresariales</option>
+                                <option value="Cloud & Infraestructura">Cloud & Infraestructura</option>
                             </select>
                             <span class="error-msg">Selecciona una solución.</span>
                         </div>
                         <div class="form-group full">
                             <label for="mensaje">Cuéntanos un poco sobre tu proyecto *</label>
                             <textarea id="mensaje" name="mensaje" rows="4"
-                                placeholder="Por ejemplo: necesito una página web para mi negocio, quiero implementar un sistema para organizar documentos, necesito ayuda con mi servidor, etc."
+                                placeholder="Por ejemplo: necesito una página web para mi negocio, quiero implementar un sistema para organizar documentos, etc."
                                 required></textarea>
                             <span class="error-msg">Escribe un breve mensaje.</span>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Quiero recibir orientación</button>
-                        <div id="formSuccess" class="form-success-msg" role="status">¡Solicitud recibida con éxito! Te
-                            responderemos dentro del horario de atención para revisar tu proyecto y orientarte sobre la
-                            mejor alternativa.</div>
                     </form>
                 </div>
             </div>
         </section>
-    </main>
 
+        <div class="popup-overlay" id="unifiedPopupOverlay" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="popup-card">
+                <button class="popup-close" id="popupClose" aria-label="Cerrar ventana">&times;</button>
+                <div id="popupContentContainer"></div>
+            </div>  
+        </div>
+    </main>
     <!-- ========================================== -->
     <!-- PIE DE PÁGINA / FOOTER                    -->
     <!-- ========================================== -->
@@ -1180,12 +1182,16 @@
         <a href="#contacto" class="btn btn-primary w-100 popup-action-close">Quiero este plan</a>
     </template>
 
-    <!-- Scripts Modulares del Proyecto con Ejecución Diferida (defer) -->
+<!-- Librería externa de EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Scripts Modulares del Proyecto -->
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/scroll.js" defer></script>
     <script src="assets/js/counter.js" defer></script>
     <script src="assets/js/portfolio.js" defer></script>
     <script src="assets/js/popup.js" defer></script>
+    <!-- Agregas esta línea para la integración de EmailJS -->
+    <script src="assets/js/contact-emailjs.js" defer></script>
 </body>
-
 </html>
